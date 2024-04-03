@@ -6,5 +6,7 @@ namespace PracticaMVC.Models
         public equiposDbContext(DbContextOptions options) :base(options) { 
         
         }
+
+        public DbSet<marcas> marcas { get; set; }
     }
 }
