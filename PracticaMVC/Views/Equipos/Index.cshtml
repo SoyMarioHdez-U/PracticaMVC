@@ -16,13 +16,13 @@
             @Html.TextBox("nombre", "", new { @class = "form-control" })
         </div>
         <div class="col-sm-2">
-            @Html.Label("lblDescripcion", "Descripción")
+            @Html.Label("lblDescripcion", "Descripción:")
         </div>
         <div class="col-sm-4">
             @Html.TextArea("descripcion", "", new { @class = "form-control", @placeHolder = "Ingrese la descripción" })
         </div>
         <div class="col-sm-2">
-            @Html.Label("lblDescripcion", "Descripción")
+            @Html.Label("lblMarcas", "Marca:")
         </div>
         <div class="col-sm-4">
             @Html.DropDownList("marca_id", ViewData["listadoDeMarcas"] as SelectList, "Seleccione una marca", new {@class="form-control"})
