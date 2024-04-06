@@ -8,8 +8,8 @@
 <h1>Helpers</h1>
 <br />
 
-
-<form>
+<hr />
+<form asp-action="guardar">
     <div class="form-group row mb-4">
 
         <div class="">
@@ -56,6 +56,7 @@
         <div class="">
             @Html.Label("lblCursos", "Cursos:")
         </div>
+
         <div>
             @{
                 IEnumerable<string> strList = new List<string> { "DAW", "SI", "MIC", "RED" };
@@ -77,5 +78,16 @@
                      )
 
         </div>
+
+        <hr />
+        <div class="form-group row mb-4">
+            <br />
+            <br />
+            <div class="col-sm-2"></div>
+            <div class="col-sm-4">
+                <input type="submit" class="btn btn-primary" value="Enviar datos"
+            </div>
+        </div>
+        <hr />
     </div>
 </form>
